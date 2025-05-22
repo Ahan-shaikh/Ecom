@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/655a4bc57c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo2.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi,I'm <span>Hosen</span> <br> From India</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, est assumenda animi quibusdam
+                        natus, omnis explicabo temporibus quas impedit molestias deleniti. Quidem hic, dolores odio sunt
+                        magni at. Doloremque, consequatur!</p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('Skill')">Skill</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skill">
+                        <ul>
+                            <li><span>Web Developement</span><br>Desiging web interface</li>
+                            <li><span>CSS</span><br>Cascading the html pages</li>
+                            <li><span>Node.js</span><br>Building powerful backend</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Web Developement</span><br>Desiging web interface</li>
+                            <li><span>CSS</span><br>Cascading the html pages</li>
+                            <li><span>Node.js</span><br>Building powerful backend</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2018</span><br>Passout 10th class</li>
+                            <li><span>2020</span><br>Passout 12th class</li>
+                            <li><span>2024</span><br>BCA from Shreyarth University</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Developement</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium autem accusantium dicta
+                        porro adipisci consectetur sapiente natus doloremque aspernatur maiores quidem, quae, architecto
+                        nihil, sequi voluptatem voluptates saepe blanditiis nemo?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-html5"></i>
+                    <h2>HTML5</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium autem accusantium dicta
+                        porro adipisci consectetur sapiente natus doloremque aspernatur maiores quidem, quae, architecto
+                        nihil, sequi voluptatem voluptates saepe blanditiis nemo?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h2>CSS</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium autem accusantium dicta
+                        porro adipisci consectetur sapiente natus doloremque aspernatur maiores quidem, quae, architecto
+                        nihil, sequi voluptatem voluptates saepe blanditiis nemo?</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, veritatis.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Music app</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, veritatis.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping app</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, veritatis.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">My Contact</h1>
+                    <p><i class="fas fa-paper-plane"></i>skhussain6391@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>7043691286</p>
+                    <div class="social-icon">
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                        <a href=""><i class="fab fa-twitter-square"></i></a>
+                    </div>
+                    <a href="" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Yourname" required>
+                        <input type="email" name="Email" placeholder="Your-Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your-Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyrigth">
+            <p>Copyrigth by Hosen</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
